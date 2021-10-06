@@ -53,7 +53,6 @@ console.log('task 1:', copy(originalFlavors));
 
 
 
-
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Confirm that an array is exactly 31 flavors. Your function should accept:
   1. an array as a parameter
@@ -149,11 +148,12 @@ Use the removeFlavorByName function below to do the following:
 */
 
 function removeFlavorByName(array, flavor){
-  for(let i = 0; 0< array.length; i++){
+  for(let i = 0; i < array.length; i++){
     if(array[i] === flavor){
       array.splice(i, 1)
     }
   }
+  return array;
 }
 
 console.log('task 6:', removeFlavorByName(originalFlavors, 'Rocky Road'));
